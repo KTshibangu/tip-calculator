@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/9ae4a14760.js" crossorigin="anonymous"></script>
+  <title>Tip calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="form-item">
+        <div class="item-text">
+          <label for="bill-input">Bill</label>
+          <div class="invalid-bill">Can't be zero</div>
+        </div>
+        <div class="input-box">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <input type="number" class="bill" id="bill" placeholder="0">
+        </div>
+      </div>
+
+      <div class="form-item">
+        <label for="tip">Select Tip %</label>
+        <div class="tip-buttons">
+          <button type="submit" class="tip-prcnt" id="tip-five">5%</button>
+          <button type="submit" class="tip-prcnt" id="tip-ten">10%</button>
+          <button type="submit" class="tip-prcnt" id="tip-fifteen">15%</button>
+          <button type="submit" class="tip-prcnt" id="tip-twenty-five">25</button>
+          <button type="submit" class="tip-prcnt" id="tip-fifty">50%</button>
+          <button type="submit"><input type="number" class="custom" id="custom" placeholder="Custom"></button>       
+        </div>
+      </div>
+
+      <div class="form-item">
+        <div class="item-text">
+          <label for="people-input">Number of People</label>
+          <div class="invalid-people">Can't be zero</div>
+        </div>
+        <div class="input-box">
+          <i class="fa-solid fa-user"></i>
+          <input type="number" class="people" id="people" placeholder="0">
+        </div>
+      </div> 
+    </div>
+    <div class="right">
+      <div class="tip-result">
+        <div class="tip-text">
+          <h4>Tip Amount</h4>
+          <h5>/ person</h5>
+        </div>
+        <div class="tip-el">$0.00</div>
+      </div>
+
+      <div class="total-result">
+        <div class="total-text">
+          <div class="total-text">
+            <h4>Total</h4>
+            <h5>/ person</h5>
+          </div>
+        </div>
+        <div class="total-el">$0.00</div>
+      </div>
+
+      <button type="reset" class="reset" id="reset">RESET</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
